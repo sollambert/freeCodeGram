@@ -7,7 +7,7 @@
             <img class="rounded-circle p-5" src="/images/profilepicture.jpeg" alt=""/>
         </div>
         <div class="col-9 pt-5">
-            <div><h1>freecodecamp</h1></div>
+            <div><h1>{{ $user->username }}</h1></div>
             <div class="d-flex">
                 <div class="pe-5"><strong>153</strong> posts</div>
                 <div class="pe-5"><strong>23k</strong> followers</div>
@@ -21,13 +21,13 @@ LearnToCodeRPG: https://www.freecodecamp.org/news/learn-to-code-rpg/</div>
     </div>
     <div class="row pt-4">
         <div class="col-4">
-            <img class="w-100 h-100" src="images/dummypost.jpeg" alt="">
+            <img class="w-100 h-100" src="/images/dummypost.jpeg" alt="">
         </div>
         <div class="col-4">
-            <img class="w-100 h-100" src="images/dummypost.jpeg" alt="">
+            <img class="w-100 h-100" src="/images/dummypost.jpeg" alt="">
         </div>
         <div class="col-4">
-            <img class="w-100 h-100" src="images/dummypost.jpeg" alt="">
+            <img class="w-100 h-100" src="/images/dummypost.jpeg" alt="">
         </div>
     </div>
 </div>
