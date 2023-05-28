@@ -7,16 +7,18 @@
             <img class="rounded-circle p-5" src="/images/profilepicture.jpeg" alt=""/>
         </div>
         <div class="col-9 pt-5">
-            <div><h1>{{ $user->username }}</h1></div>
+            <div class="d-flex justify-content-between align-items-baseline">
+                <h1>{{ $user->username }}</h1>
+                <a href="/p/create">Add New Post</a>
+            </div>
             <div class="d-flex">
                 <div class="pe-5"><strong>153</strong> posts</div>
                 <div class="pe-5"><strong>23k</strong> followers</div>
                 <div class="pe-5"><strong>212</strong> following</div>
             </div>
-            <div class="pt-4 fw-bold">freecodecamp.org</div>
-            <div>We're a global community of millions of people learning to code together.
-LearnToCodeRPG: https://www.freecodecamp.org/news/learn-to-code-rpg/</div>
-            <a href="#">www.freecodecamp.org</a>
+            <div class="pt-4 fw-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+            <a href="https://{{ $user->profile->url }}">{{ $user->profile->url }}</a>
         </div>
     </div>
     <div class="row pt-4">
